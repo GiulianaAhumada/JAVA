@@ -1,0 +1,19 @@
+/*Pedir una nota de 1 a 10 y mostrarla de la forma: Aplazado,
+Desaprobado, Aprobado... (hacerlo de dos formas
+diferentes: con IF y con SWITH-CASE)*/
+package ejercicio10;
+import java.util.Scanner;
+public class Ejercicio10 {
+public static void main(String[] args) {
+int nota;
+Scanner input = new Scanner(System.in);
+System.out.println(&quot;ingrese su nota del 1 al 10&quot;);
+nota= input.nextInt();
+if(nota&lt;=4)
+System.out.println(&quot;aplazado&quot;);
+else if(nota&gt;4 &amp;&amp; nota&lt;7)
+System.out.println(&quot;desaprobado&quot;);
+else if(nota&gt;=7)
+System.out.println(&quot;aprobado&quot;);
+}
+}
