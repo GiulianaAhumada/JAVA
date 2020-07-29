@@ -1,0 +1,43 @@
+4. Dadas las edades y alturas de 5 alumnos, mostrar la edad y la estatura media, la cantidad de alumnos mayores
+de 18 años, y la cantidad de alumnos que miden más de 1,75.
+package ejercicio;
+import java.util.Scanner;
+
+Ahumada Giuliana 6to 2da programación
+public class ejercicio{
+public static void main(String[] args) {
+int edad;
+float estatura;
+float media_edad;
+float media_altura;
+int suma_edad=0;
+float suma_alt=0;
+int cont_edad=0;
+int cont_alt=0;
+Scanner input= new Scanner(System.in);
+for(int i=0;i&lt;=5;i++)
+{
+System.out.println(&quot;Introduce edad&quot;);
+edad=input.nextInt();
+System.out.println(&quot;Introduce altura&quot;);
+estatura=input.nextFloat();
+if(edad&gt;18)
+{
+cont_edad++;
+suma_edad=suma_edad+edad;
+}
+if(estatura&gt;(1.75))
+{
+cont_alt++;
+suma_alt=suma_alt+estatura;
+}
+}
+media_edad=suma_edad/cont_edad;
+media_altura=suma_alt/cont_alt;
+System.out.println(&quot;Edad media: &quot;+media_edad);
+System.out.println(&quot;Altura media: &quot;+media_altura);
+System.out.println(&quot;Alumnos mayores de 18 años: &quot;+cont_edad);
+System.out.println(&quot;Alumnos con altura mas de 1.75:&quot; +cont_alt);
+}
+
+}
