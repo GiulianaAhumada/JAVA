@@ -1,0 +1,29 @@
+/*Solicitar el ingreso del nombre y edad de dos personas. Mostrar el nombre de la persona con
+mayor edad.*/
+package ejercicio10;
+
+import java.util.Scanner;
+
+public class Ejercicio10 {
+public static void main(String[] args) {
+String nombre1,nombre2;
+int edad1,edad2;
+Scanner input = new Scanner(System.in);
+System.out.print(&quot;Ingrese el nombre:&quot;);
+nombre1=input.next();
+System.out.print(&quot;Ingrese edad:&quot;);
+edad1=input.nextInt();
+System.out.print(&quot;Ingrese el nombre:&quot;);
+nombre2=input.next();
+System.out.print(&quot;Ingrese edad:&quot;);
+edad2=input.nextInt();
+System.out.print(&quot;La persona de mayor edad es:&quot;);
+if (edad1&gt;edad2) {
+System.out.print(nombre1);
+}
+else 
+{
+System.out.print(nombre2);
+  }
+ }
+}
